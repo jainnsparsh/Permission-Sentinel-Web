@@ -1,0 +1,6 @@
+app_name,package_name,permission,purpose
+NaviRider,com.nav.rider,android.permission.ACCESS_FINE_LOCATION,Maps / Navigation
+NaviRider,com.nav.rider,android.permission.ACCESS_COARSE_LOCATION,Maps / Navigation
+NaviRider,com.nav.rider,android.permission.ACCESS_BACKGROUND_LOCATION,Maps / Navigation
+NaviRider,com.nav.rider,android.permission.INTERNET,Maps / Navigation
+NaviRider,com.nav.rider,android.permission.FOREGROUND_SERVICE,Maps / Navigation

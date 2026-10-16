@@ -1,0 +1,16 @@
+{
+  "app_name": "ProPhoto Editor",
+  "package_name": "com.photo.proeditor",
+  "version": "2.4.0",
+  "target_sdk": "34",
+  "purpose": "Camera / Photo Editor",
+  "description": "Photo filter and retouch app",
+  "permissions": [
+    "android.permission.CAMERA",
+    "android.permission.READ_MEDIA_IMAGES",
+    "android.permission.READ_MEDIA_VIDEO",
+    "android.permission.INTERNET",
+    "android.permission.READ_SMS",
+    "android.permission.READ_CONTACTS"
+  ]
+}
