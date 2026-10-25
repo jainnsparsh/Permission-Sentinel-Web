@@ -1,23 +1,23 @@
-# Permission Sentinel 🛡️
+# Permission Sentinel 
 > **Intelligent, Explainable Android Application Permission Auditor**  
 > *Local-First Security Assessment for Hackathons, Enterprise Zero-Trust, and App Review.*
 
 ---
 
-## 🌟 Overview
+##  Overview
 
 **Permission Sentinel** is a production-grade, local-first security tool designed to identify excessive and suspicious permissions in Android applications. By comparing an app's declared operational purpose against the permissions requested in its `AndroidManifest.xml`, APK binary, or permission reports, it calculates a **transparent, deterministic risk score (0–100)** and flags dangerous permission combinations and enterprise policy infringements.
 
 ### Key Pillars
-- 🔒 **100% Local-First & Confidential**: Zero telemetry, zero external cloud dependencies. APK binaries and proprietary manifests never leave your local environment.
-- 📐 **Deterministic & Explainable Scoring**: Avoids unpredictable LLM hallucinations. Transparent scoring formulas decompose into Base Sensitivity, Purpose Mismatch, Dangerous Combination Rules, and Policy Violations.
-- ⚡ **Multi-Modal Ingestion**: Ingest via APK binary parsing (with Androguard), Manifest XML, JSON reports, CSV exports, or interactive manual form.
-- 🎯 **8 Ground-Truth Benchmarks**: Built-in synthetic test fixtures ranging from minimal calculators to covert surveillance utilities.
-- 🏢 **Organizational Security Policies**: Define custom zero-trust rules, blocked permissions (e.g. SMS/Call logs), and enterprise risk thresholds.
+-  **100% Local-First & Confidential**: Zero telemetry, zero external cloud dependencies. APK binaries and proprietary manifests never leave your local environment.
+-  **Deterministic & Explainable Scoring**: Avoids unpredictable LLM hallucinations. Transparent scoring formulas decompose into Base Sensitivity, Purpose Mismatch, Dangerous Combination Rules, and Policy Violations.
+-  **Multi-Modal Ingestion**: Ingest via APK binary parsing (with Androguard), Manifest XML, JSON reports, CSV exports, or interactive manual form.
+-  **8 Ground-Truth Benchmarks**: Built-in synthetic test fixtures ranging from minimal calculators to covert surveillance utilities.
+-  **Organizational Security Policies**: Define custom zero-trust rules, blocked permissions (e.g. SMS/Call logs), and enterprise risk thresholds.
 
 ---
 
-## 🏗️ Architecture
+##  Architecture
 
 ```
 permission-sentinel/
@@ -47,7 +47,7 @@ permission-sentinel/
 
 ---
 
-## 🚀 Quick Start Guide
+##  Quick Start Guide
 
 ### Prerequisites
 - Python 3.10+
@@ -87,7 +87,7 @@ Open `http://localhost:5173` in your browser.
 
 ---
 
-## 📊 Transparent Scoring Methodology
+##  Transparent Scoring Methodology
 
 The overall risk score (clamped between 0 and 100) is deterministically computed from 5 components:
 
@@ -131,7 +131,7 @@ npm run build
 
 ---
 
-## ⚡ One-Click Startup Scripts (Windows)
+##  One-Click Startup Scripts (Windows)
 
 - `run_backend.bat`: Launches FastAPI dev server on port 8000
 - `run_frontend.bat`: Launches Vite React frontend on port 5173
@@ -140,7 +140,7 @@ npm run build
 
 ---
 
-## 📂 Sample Ingestion Fixtures (`sample_fixtures/`)
+##  Sample Ingestion Fixtures (`sample_fixtures/`)
 
 To test the drag-and-drop file ingestion in the UI (`/analyze`):
 - `shady_calc_manifest.xml`: Malicious calculator AndroidManifest.xml (Scores ~90 High Risk)
@@ -150,7 +150,7 @@ To test the drag-and-drop file ingestion in the UI (`/analyze`):
 
 ---
 
-## 📋 Evaluation Benchmarks
+##  Evaluation Benchmarks
 
 Permission Sentinel includes 8 synthetic benchmark applications to evaluate detection performance:
 1. **SimpleCalc**: Minimal calculator requiring 0 permissions (Ground Truth: Low Risk [0-5 pts], Result: 0 pts ✅).
